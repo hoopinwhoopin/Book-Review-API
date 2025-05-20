@@ -1,4 +1,4 @@
-Below is an Entity-Relationship (ER) diagram based on the provided schemas for **User** and **Book**:
+
 
 ```mermaid
 erDiagram
@@ -51,4 +51,4 @@ erDiagram
       * **PK (Primary Key):** Uniquely identifies each record in an entity (e.g., `username` for `User`, `title` for `Book`).
       * **FK (Foreign Key):** An attribute in one entity that refers to the primary key of another entity, establishing a link between them (e.g., `user` in `Review` is a foreign key referencing the `_id` or `username` of the `User` entity, and implicitly a book ID would be needed in Review as well, referring to the `Book` entity).
 
-This diagram visually represents how your `User` and `Book` data are structured and related in a database context.
+
