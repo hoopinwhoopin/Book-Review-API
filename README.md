@@ -21,7 +21,7 @@ Make sure you have the following installed:
 Getting Started
 
 1. Clone the repo:
-   git clone https://github.com/your-username/book-review-api.git
+   git clone https://github.com/hoopinwhoopin/Book-Review-API
    cd book-review-api
 
 2. Install dependencies:
