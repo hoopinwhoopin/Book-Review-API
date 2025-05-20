@@ -83,37 +83,6 @@ Delete Review - DELETE /api/books/reviews/:id (auth required)
 curl -X DELETE http://localhost:3000/api/books/reviews/REVIEW_ID \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 
-Schema Overview
-
-User:
-{
-  username: String,
-  email: String,
-  password: String, // hashed
-  createdAt: Date,
-  updatedAt: Date
-}
-
-Book:
-{
-  title: String,
-  author: String,
-  genre: String,
-  description: String,
-  reviews: [
-    {
-      user: ObjectId, // ref to User
-      rating: Number,
-      comment: String,
-      createdAt: Date,
-      updatedAt: Date
-    }
-  ],
-  averageRating: Number,
-  createdAt: Date,
-  updatedAt: Date
-}
-
  Design Choices
 
 - JWT Auth: Lightweight and stateless authentication.
